@@ -19,7 +19,7 @@ pipeline {
 	}
 	stage('Build') {
 		steps{
-		sh 'yrn install'
+		sh 'yarn install'
 		}	
 	}
 	stage('Test') {
