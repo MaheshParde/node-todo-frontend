@@ -4,7 +4,7 @@ pipeline {
   tools {nodejs "node"}
 
 	environment{
-	registry="mrchelsea/testing-docker"
+	registry="maheshparde/rect-test"
 	registryCredential='dockerhub'
 	dockerImage=''
 	}
@@ -14,7 +14,7 @@ pipeline {
 	stages{
 	stage('Git') {
 		steps{
-		git 'https://github.com/rahulguptaft9/node-todo-frontend'
+		git 'https://github.com/MaheshParde/node-todo-frontend'
 		}	
 	}
 	stage('Build') {
